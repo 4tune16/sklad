@@ -1,0 +1,343 @@
+:root {
+  --primary: #bf545c;
+  --white: #ffffff;
+  --white-secondary: #fff8f8;
+  --black: #242324;
+  --black-secondary: #1d1c1c;
+  --light-gray: #d9d9d9;
+}
+
+.content-container {
+  max-width: 1672px;
+  margin-inline: auto;
+  padding-inline: 16px;
+}
+
+.primary-button {
+  background-color: var(--primary);
+
+  padding: 20px 34px;
+  border: none;
+  border-radius: 9px;
+
+  font-family: "Overpass";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--white);
+
+  height: 64px;
+}
+
+select,
+input {
+  border: none;
+  border-radius: 9px;
+
+  font-family: "Overpass";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--black);
+
+  padding-inline: 20px;
+  height: 64px;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url(./Images//select-arrow.svg);
+  background-repeat: no-repeat;
+  background-position-x: calc(100% - 20px);
+  background-position-y: 50%;
+}
+
+/* --------     TODO!!!!!!!!!!! -------- */
+/* select:focus {
+} */
+
+.block-1 {
+  width: 100%;
+  height: 1080px;
+  background: url(./Images/Block-1.png) 100% 100%;
+}
+
+.block-1_box {
+  height: 100%;
+  position: relative;
+}
+
+/* --------Header------------------------ */
+
+.header {
+  height: 100px;
+  padding-top: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-text {
+  font-family: "Montserrat";
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.1;
+  color: var(--white);
+}
+
+.logo-text:hover {
+  cursor: pointer;
+  opacity: 0.1;
+}
+
+.nav-list {
+  display: flex;
+  gap: 30px;
+
+  font-family: "Overpass";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.nav-item {
+  color: var(--white);
+}
+
+.nav-item:hover {
+  opacity: 0.1;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+
+  font-family: "Overpass";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--white-secondary);
+
+  position: relative;
+}
+
+.contact-number:hover,
+.contact-call:hover {
+  opacity: 0.1;
+  cursor: pointer;
+}
+
+.contact-call {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  font-family: "Overpass";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--white-secondary);
+  text-decoration: underline;
+  text-wrap: nowrap;
+
+  position: absolute;
+  top: 23px;
+  left: -10px;
+}
+
+.burger-menu {
+  display: none;
+}
+
+/* -------- Block-1-------------------- */
+
+.block-1_main {
+  max-width: 46%;
+  margin-top: 250px;
+}
+
+.block-1_title {
+  font-family: "Montserrat";
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: var(--white);
+}
+
+.block-1_text {
+  margin-top: 30px;
+
+  font-family: "Overpass";
+  font-size: 22px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--white);
+}
+
+.block-1_button {
+  margin-top: 66px;
+  text-wrap: nowrap;
+}
+
+/*  -------Block-1_calculator */
+
+.block-1_calculator {
+  width: 83%;
+  background-color: var(--black);
+  display: flex;
+  padding: 48px 145px;
+  gap: 36px;
+
+  border-radius: 9px;
+
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.block-1_calculator > * {
+  width: 100%;
+}
+
+.calculator_button {
+  text-wrap: nowrap;
+}
+
+/* --------- Block-2 ABOUT us ---------- */
+
+.block_about-us_title {
+  margin-top: 181px;
+
+  font-family: "Montserrat";
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: var(--black-secondary);
+  text-align: center;
+}
+
+.block_about-us_text {
+  margin-top: 50px;
+  font-family: "Overpass";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.cards-section {
+  margin-top: 50px;
+  padding-block: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.card {
+  padding: 20px 15px 40px;
+  background-color: var(--light-gray);
+  border-radius: 40px;
+  width: calc(100% / 4);
+
+  text-align: center;
+}
+
+.card-name {
+  margin-top: 30px;
+
+  font-family: "Overpass";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--black);
+}
+
+.card-info {
+  margin-top: 8px;
+
+  font-family: "Overpass";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--black);
+}
+
+/*  ================ MEDIA ======== */
+
+@media (max-width: 360px) {
+  select,
+  input {
+    font-size: 16px;
+
+    padding-inline: 15px;
+
+    height: 48px;
+  }
+
+  .primary-button {
+    padding: 13px;
+    height: 48px;
+
+    font-size: 16px;
+  }
+
+  .block-1 {
+    height: 640px;
+    background-position: center;
+  }
+
+  .header {
+    padding-top: 15px;
+    height: 52px;
+  }
+
+  .logo-text {
+    font-size: 20px;
+  }
+
+  .nav-list,
+  .contact-info {
+    display: none;
+  }
+
+  .burger-menu {
+    display: block;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+
+  .block-1_main {
+    margin-top: 164px;
+    max-width: 100%;
+  }
+
+  .block-1_title {
+    font-size: 26px;
+  }
+
+  .block-1_text {
+    font-size: 18px;
+    margin-top: 12px;
+  }
+
+  .block-1_button {
+    margin-top: 25px;
+  }
+
+  .block-1_calculator {
+    width: calc(100% - 32px);
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 44px;
+
+    transform: translate(-50%, 300px);
+  }
+
+  .calculator_button {
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Storrity</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Styles -->
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./sklad.css" />
+  </head>
+  <body>
+    <div class="block-1">
+      <div class="content-container block-1_box">
+        <div class="header">
+          <div class="logo-text">Storrity</div>
+          <div class="nav-list">
+            <a href="#" class="nav-item">Преимущества</a>
+            <a href="#" class="nav-item">Каталог</a>
+            <a href="#" class="nav-item">Этапы аренды</a>
+            <a href="#" class="nav-item">Контакты</a>
+          </div>
+          <div class="contact-info">
+            <div class="contact-number">+7 495 144 14 47</div>
+            <div class="contact-call">
+              <img src="./Images/call-icon.svg" alt="" />Обратный звонок
+            </div>
+          </div>
+          <button class="burger-menu" type="button">
+            <img src="./Images/burger.svg" alt="" />
+          </button>
+        </div>
+        <div class="block-1_main">
+          <h1 class="block-1_title">
+            Аренда складских помещений в Санкт-Петербурге
+          </h1>
+          <p class="block-1_text">
+            819 актуальных складов: от небольших комнат до 15 000 м<sup>2</sup>
+          </p>
+          <button class="primary-button block-1_button" type="button">
+            Смотреть каталог
+          </button>
+        </div>
+        <div class="block-1_calculator">
+          <select name="sclad-type" id="sclad-type">
+            <option selected value="A">Класс A</option>
+            <option value="B">Класс B</option>
+            <option value="C">Класс C</option>
+          </select>
+          <input
+            placeholder="Площадь: до 1000 м2"
+            type="number"
+            class="sclad-size"
+          />
+          <input
+            placeholder="Цена: 100 000 ₽"
+            type="number"
+            class="sclad-price"
+          />
+          <button class="primary-button calculator_button">
+            Подобрать склад
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="block_about-us">
+      <div class="content-container">
+        <h2 class="block_about-us_title">
+          Наши склады — больше, чем просто помещение для хранения
+        </h2>
+        <p class="block_about-us_text">Каждый склад — это:</p>
+        <div class="cards-section">
+          <div class="card">
+            <img src="/Images/block-2-1.png" alt="2 cameras" class="card-img" />
+            <p class="card-name">Система охраны</p>
+            <p class="card-info">
+              КПП на крупных складах и ЧОП на всех остальных
+            </p>
+          </div>
+          <div class="card">
+            <img src="./Images/block-2-2.png" alt="building" class="card-img" />
+            <p class="card-name">Погрузочные доки</p>
+            <p class="card-info">На крупных складах от 2 до 16 доков</p>
+          </div>
+          <div class="card">
+            <img
+              src="./Images/block-2-3.png"
+              alt="hands on laptop"
+              class="card-img"
+            />
+            <p class="card-name">IT инфраструктура</p>
+            <p class="card-info">Оптоволоконный интернет и телефония</p>
+          </div>
+          <div class="card">
+            <img
+              src="./Images/block-2-4.png"
+              alt="storage zone"
+              class="card-img"
+            />
+            <p class="card-name">Для любых целей</p>
+            <p class="card-info">От небольших комнат до 6-этажных помещений</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
