@@ -29,6 +29,10 @@
   height: 64px;
 }
 
+.primary-button:hover {
+  opacity: 50%;
+}
+
 select,
 input {
   border: none;
@@ -265,6 +269,161 @@ select {
   color: var(--black);
 }
 
+/* ----------Block CATALOG------ */
+
+.block-catalog {
+  background-image: url(./Images/Block-1.png);
+
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.87);
+  background-size: cover;
+  background-position: center;
+
+  padding-block: 90px;
+}
+
+.block-catalog_title {
+  width: 43%;
+
+  font-family: "Montserrat";
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: var(--white);
+}
+
+.catalog-navigation {
+  margin-top: 50px;
+
+  display: flex;
+  justify-content: space-between;
+  height: 67px;
+}
+
+.catalog-tabs {
+  display: flex;
+  width: 37%;
+}
+
+.catalog-tab {
+  padding: 17px 25px;
+  width: 25%;
+
+  font-family: "Overpass";
+  font-size: 22px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--white);
+
+  border-bottom: 1px solid #000000;
+}
+
+#classes {
+  display: none;
+}
+
+.active-tab {
+  border-bottom: 2px solid var(--primary);
+}
+
+.catalog-arrows {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 50px;
+  aspect-ratio: 1;
+
+  background-color: var(--primary);
+
+  border-radius: 50%;
+}
+
+.arrow:hover {
+  background-color: var(--primary);
+  opacity: 50%;
+}
+
+.arrow-img.right {
+  transform: rotate(180deg);
+}
+
+.catalog-cards-section {
+  margin-top: 28px;
+
+  display: flex;
+  gap: 40px;
+
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.catalog-card {
+  width: 33%;
+  flex-shrink: 0;
+}
+
+.catalog-card img {
+  border-radius: 15px;
+}
+
+.catalog-item-size {
+  margin-top: 13px;
+
+  font-family: "Overpass";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--white);
+  opacity: 70%;
+}
+
+.catalog-item-name {
+  margin-top: 15px;
+
+  font-family: "Overpass";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--white);
+}
+
+.catalog-item-info {
+  margin-top: 4px;
+
+  font-family: "Overpass";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--white);
+}
+
+.catalog-item-price {
+  margin-top: 28px;
+  padding: 17px 40px;
+
+  border: 1px solid var(--primary);
+  border-radius: 9px;
+
+  font-family: "Overpass";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--white);
+}
+
+.catalog-item-price:hover {
+  background-color: var(--white);
+  color: var(--primary);
+  opacity: 90%;
+}
+
 /*  ================ MEDIA ======== */
 
 @media (max-width: 360px) {
@@ -339,5 +498,128 @@ select {
 
   .calculator_button {
     margin-top: 10px;
+  }
+
+  .block_about-us_title {
+    font-size: 23px;
+
+    margin-top: 337px;
+  }
+
+  .block_about-us_text {
+    margin-top: 12px;
+    font-size: 16px;
+  }
+
+  .cards-section {
+    padding: 0;
+    flex-direction: column;
+    gap: 20px;
+
+    margin-top: 25px;
+    padding-bottom: 40px;
+  }
+
+  .card {
+    padding: 21px 21px 33px;
+    border-radius: 30px;
+    width: 100%;
+    height: 345px;
+  }
+
+  .card-name {
+    margin-top: 22px;
+
+    font-size: 16px;
+  }
+
+  .card-info {
+    margin-top: 5px;
+
+    font-size: 15px;
+
+    line-height: 1.35;
+  }
+
+  /* -----BLOCK Catalog */
+  .block-catalog {
+    padding-block: 40px;
+  }
+
+  .block-catalog_title {
+    width: 97%;
+
+    font-size: 23px;
+  }
+
+  .catalog-navigation {
+    height: 57px;
+  }
+
+  .catalog-tabs {
+    width: 100%;
+  }
+
+  button.catalog-tab {
+    display: none;
+  }
+
+  #classes {
+    width: 65%;
+    display: block;
+    font-family: "Overpass";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--white);
+
+    background-color: transparent;
+    height: 100%;
+
+    border-radius: 0;
+    background-image: url(./Images//select-arrow.png);
+  }
+
+  .arrow {
+    width: 44px;
+  }
+
+  .catalog-card {
+    width: 74%;
+  }
+
+  .catalog-item-size {
+    margin-top: 5px;
+
+    font-size: 15px;
+  }
+
+  .catalog-item-name {
+    margin-top: 10px;
+
+    font-size: 16px;
+  }
+
+  .catalog-item-info {
+    margin-top: 0;
+
+    font-size: 16px;
+
+    display: -webkit-box;
+    max-width: 100%;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .catalog-item-info:hover {
+    -webkit-line-clamp: 200;
+  }
+
+  .catalog-item-price {
+    margin-top: 11px;
+    padding: 10px 20px;
+
+    font-size: 16px;
   }
 }

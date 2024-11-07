@@ -142,6 +142,11 @@ label {
   cursor: pointer;
 }
 
+button:where([class]) {
+  border: none;
+  background-color: transparent;
+}
+
 /**
    Приводим к единому цвету svg-элементы
   */
