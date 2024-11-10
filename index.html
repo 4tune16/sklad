@@ -19,7 +19,7 @@
     <div class="block-1">
       <div class="content-container block-1_box">
         <!-- <div class="header burger-open"> -->
-        <div class="header">
+        <div class="header" id="header">
           <div class="logo-text">Storrity</div>
           <div class="nav-list">
             <a href="#" class="nav-item">Преимущества</a>
@@ -33,7 +33,7 @@
               <img src="./Images/call-icon.svg" alt="" />Обратный звонок
             </div>
           </div>
-          <button class="burger-menu" type="button">
+          <button onclick="toggleBurger()" class="burger-menu" type="button">
             <img src="./Images/burger.svg" alt="" class="open-icon" />
             <img src="./Images/burger-close.svg" alt="" class="close-icon" />
           </button>
@@ -313,5 +313,27 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      const toggleBurger = () => {
+        const header = document.getElementById("header");
+
+        const headerClasses = header.className;
+        const headerClassesArray = headerClasses.split(" ");
+
+        const burgerMenuIsOpened = headerClassesArray.some((arrayItem) => {
+          return arrayItem === "burger-open";
+        });
+        if (burgerMenuIsOpened) {
+          const newClassesArray = headerClassesArray.filter((arrayItem) => {
+            return arrayItem !== "burger-open";
+          });
+
+          header.className = newClassesArray;
+        } else {
+          header.className = header.className + " " + "burger-open";
+        }
+      };
+    </script>
   </body>
 </html>
