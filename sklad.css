@@ -477,10 +477,256 @@ select {
   background-repeat: no-repeat;
   background-size: 100% 100%;
 
-  padding: 160px 280px;
+  padding-block: 160px;
 }
 
 .block-5-box {
+  width: 83%;
+  margin-inline: auto;
+  padding-block: 100px;
+  background-color: #232222;
+  border-radius: 29px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.block-5-title {
+  max-width: 60%;
+
+  font-family: "Montserrat";
+  font-size: 50px;
+  line-height: 1.1;
+  font-weight: 600;
+  color: var(--white);
+  text-align: center;
+}
+
+.block-5-info {
+  font-family: "Overpass";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.5;
+  color: var(--white);
+  text-align: center;
+
+  margin-top: 29px;
+  max-width: 30%;
+}
+
+.block-5-form {
+  width: 30%;
+  margin-top: 80px;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.agreement-container {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.agreement-input {
+  /* Hide default styles */
+
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: #fff;
+  /* Not removed via appearance */
+  margin: 0 5px 0 0;
+  padding: 0;
+
+  color: var(--primary);
+  width: 19px;
+  height: 19px;
+  border: 2px solid currentColor;
+  border-radius: 4px;
+  background-color: transparent;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.agreement-input:checked {
+  background-image: url(./Images/checkbox.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+.agreement-label {
+  font-family: "Overpass";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--white);
+  opacity: 80%;
+  text-align: center;
+}
+
+/* ------BLOCK-6------------ */
+.block-6-contacts {
+  padding-block: 318px;
+
+  background-image: url(./Images/block-6-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contacts-box {
+  background-color: #000000;
+  border-radius: 30px;
+
+  display: inline-flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.contacts-title {
+  font-family: "Fjalla One";
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.1;
+  color: var(--white);
+}
+
+.contacts-item {
+  font-family: "Overpass";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.5;
+  color: var(--white);
+
+  margin-top: 34px;
+
+  display: flex;
+  column-gap: 11px;
+  align-items: center;
+}
+
+.contacts-socials {
+  margin-top: 57px;
+
+  display: flex;
+  column-gap: 25px;
+}
+
+.socials-item {
+  font-family: "Overpass";
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--white);
+  opacity: 90%;
+}
+
+.socials-item:hover {
+  opacity: 40%;
+}
+
+/* ----------FOOTER--------- */
+
+footer {
+  padding-block: 99px 142px;
+}
+
+.footer.content-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.confidential-section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+
+  max-width: 174px;
+}
+
+.confidential-section-title {
+  margin-bottom: 4px;
+
+  font-family: "Fjalla One";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.1;
+  color: #010101;
+}
+
+.confidential-section-link {
+  font-family: "Overpass";
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+  opacity: 70%;
+}
+
+.confidential-section-link:hover {
+  opacity: 30%;
+}
+
+.links-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  column-gap: 79px;
+  row-gap: 14px;
+
+  max-height: 146px;
+}
+
+.links-section-item {
+  font-family: "Overpass";
+  font-size: 17px;
+  font-weight: 400;
+  color: #000000;
+  opacity: 90%;
+}
+
+.links-section-item:hover {
+  opacity: 50%;
+}
+
+.contacts-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 7px;
+}
+
+.footer.primary-button {
+  background-color: transparent;
+  border: 1px solid var(--primary);
+
+  color: #000000;
+  opacity: 90%;
+  font-weight: 400;
+
+  padding: 17px 43.5px;
+  margin-bottom: 8px;
+}
+
+.footer.primary-button:hover {
+  opacity: 50%;
+}
+
+.contacts-section-item {
+  font-family: "Overpass";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+
+  color: #000000;
+}
+
+.contacts-section-item:hover {
+  opacity: 50%;
 }
 
 /*  ================ !!!!!! MEDIA ======== */
@@ -775,5 +1021,176 @@ select {
   .card-info {
     margin-top: 10px;
     font-size: 15px;
+  }
+
+  /* -----Block-5 -------- */
+
+  .block-5 {
+    padding-block: 40px;
+  }
+
+  .block-5-box {
+    width: 100%;
+
+    padding-block: 0;
+    background-color: transparent;
+    border-radius: 0;
+  }
+
+  .block-5-title {
+    max-width: 100%;
+
+    font-size: 22px;
+  }
+
+  .block-5-info {
+    font-size: 18px;
+
+    margin-top: 12px;
+    max-width: 95%;
+  }
+
+  .block-5-form {
+    width: 68%;
+    margin-top: 25px;
+  }
+
+  .agreement-label > span {
+    width: 47%;
+  }
+
+  /* ---------BLOCK-6------ */
+
+  .block-6-contacts {
+    padding-block: 0 500px;
+
+    background-image: url(./Images/block-6-map.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -105px 257px;
+
+    position: relative;
+  }
+
+  .block-6-contacts::after {
+    content: url(./Images/geo.svg);
+
+    position: absolute;
+    bottom: 290px;
+    left: 20px;
+  }
+
+  .block-6.content-container {
+    background-color: var(--white);
+  }
+
+  .contacts-box {
+    background-color: var(--white);
+    border-radius: 0;
+
+    padding: 40px 0 25px 0;
+    display: flex;
+  }
+
+  .contacts-title {
+    font-size: 20px;
+    color: #000000;
+
+    margin-bottom: 20px;
+  }
+
+  .contacts-item {
+    font-size: 15px;
+    color: #000000;
+
+    margin-top: 5px;
+
+    display: flex;
+    column-gap: 5px;
+
+    align-items: center;
+  }
+
+  .contacts-item > img {
+    transform: scale(0.7);
+  }
+
+  .contacts-socials {
+    margin-top: 20px;
+
+    column-gap: 10px;
+  }
+
+  .socials-item {
+    font-size: 14px;
+    color: #000000;
+    opacity: 40%;
+  }
+
+  /* ------FOOTER */
+  footer {
+    padding-block: 40px;
+  }
+
+  .footer.content-container {
+    max-height: 306px;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    align-content: space-between;
+  }
+
+  .confidential-section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 17px;
+  }
+
+  .confidential-section-title {
+    font-size: 20px;
+
+    margin-bottom: 8px;
+    margin-left: calc(0px - (100vw - 100% - 32px));
+  }
+
+  .confidential-section-link {
+    font-size: 12px;
+    opacity: 60%;
+  }
+
+  .links-section {
+    order: -1;
+    flex-wrap: nowrap;
+    max-height: fit-content;
+
+    margin-top: 47px;
+  }
+
+  .links-section-item {
+    font-size: 15px;
+  }
+
+  .footer.primary-button {
+    background-color: transparent;
+    border: 1px solid var(--primary);
+
+    color: #000000;
+    opacity: 90%;
+    font-weight: 400;
+
+    padding: 12px 22.5px;
+    margin-block: 46px 12px;
+  }
+
+  .contacts-section {
+    align-items: flex-end;
+    row-gap: 7px;
+  }
+
+  .contacts-section-item {
+    font-size: 14px;
+    opacity: 90%;
+
+    text-align: right;
   }
 }
