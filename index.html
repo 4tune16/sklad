@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./normalize.css" />
     <link rel="stylesheet" href="./sklad.css" />
   </head>
-  <body>
+  <body id="body">
     <div class="block-1">
       <div class="content-container block-1_box">
         <!-- <div class="header burger-open"> -->
@@ -317,6 +317,7 @@
     <script>
       const toggleBurger = () => {
         const header = document.getElementById("header");
+        const body = document.getElementById("body");
 
         const headerClasses = header.className;
         const headerClassesArray = headerClasses.split(" ");
@@ -330,8 +331,10 @@
           });
 
           header.className = newClassesArray;
+          body.style.overflow = "auto";
         } else {
           header.className = header.className + " " + "burger-open";
+          body.style.overflow = "hidden";
         }
       };
     </script>
