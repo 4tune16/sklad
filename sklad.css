@@ -907,7 +907,7 @@ footer {
   .calculator_button {
     margin-top: 10px;
   }
-
+  /* ----------BLOCK-2 ABOUT US------------- */
   .block_about-us_title {
     font-size: 23px;
 
@@ -922,6 +922,7 @@ footer {
   .cards-section {
     padding: 0;
     flex-direction: column;
+
     gap: 20px;
 
     margin-top: 25px;
@@ -933,6 +934,10 @@ footer {
     border-radius: 30px;
     width: 100%;
     height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .card-name {
