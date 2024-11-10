@@ -242,6 +242,8 @@ select {
   display: flex;
   justify-content: space-between;
   gap: 40px;
+
+  margin-bottom: 83px;
 }
 
 .card {
@@ -730,6 +732,46 @@ footer {
 }
 
 /*  ================ !!!!!! MEDIA ======== */
+@media (max-width: 1470px) {
+  .content-container {
+    max-width: 1250px;
+  }
+
+  .block-1_main {
+    max-width: 750px;
+  }
+
+  .block-1_calculator {
+    padding-inline: 48px;
+  }
+
+  .block-catalog_title {
+    width: 100%;
+  }
+  .catalog-tabs {
+    width: 45%;
+  }
+}
+
+@media (max-width: 1210px) {
+  .content-container {
+    max-width: 1050px;
+  }
+
+  .catalog-tabs {
+    width: 60%;
+  }
+}
+
+/* @media (max-width: 1210px) {
+  .content-container {
+    max-width: 1050px;
+  }
+
+  .catalog-tabs {
+    width: 60%;
+  }
+} */
 
 @media (max-width: 450px) {
   select,
