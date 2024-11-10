@@ -122,7 +122,7 @@ select {
   font-size: 17px;
   font-weight: 400;
   line-height: 1.5;
-  color: #fff8f8;
+
   color: var(--white-secondary);
 
   position: relative;
@@ -135,7 +135,6 @@ select {
 }
 
 .contact-number {
-  color: #fff8f8;
   color: var(--white-secondary);
 }
 
