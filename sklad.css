@@ -255,6 +255,13 @@ select {
   text-align: center;
 }
 
+.card-img.cameras-img {
+  width: 348px;
+  height: 241px;
+
+  border-radius: 40px;
+}
+
 .card-name {
   margin-top: 30px;
 
